@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+ 
     <title>Four Petals Floricultura</title>
 </head>
 
@@ -29,6 +30,42 @@
         nossos serviços e formas de entrar em contato.
     </p>
 </section>
+<!-- CARROSSEL DE FOTOS -->
+<div class="carousel">
+
+    <div class="slide">
+        <img src="imagens/flor1.jpg" alt="Buquê de flores">
+    </div>
+
+    <div class="slide">
+        <img src="imagens/flor2.jpg" alt="Arranjo floral">
+    </div>
+
+    <div class="slide">
+        <img src="imagens/flor3.jpg" alt="Flores coloridas">
+    </div>
+
+    <div class="slide">
+        <img src="imagens/flor4.jpg" alt="Buquê Four Petals">
+    </div>
+    
+
+
+    <!-- Botões -->
+    <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
+
+    <!-- Indicadores -->
+    <div class="indicadores">
+        <span onclick="irParaSlide(1)"></span>
+        <span onclick="irParaSlide(2)"></span>
+        <span onclick="irParaSlide(3)"></span>
+        <span onclick="irParaSlide(4)"></span>
+    
+       
+    </div>
+
+</div>
 
 <section id="quem-somos">
     <h1>Quem Somos Nós</h1>
