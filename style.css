@@ -53,6 +53,57 @@ section {
     text-align: center;
 }
 
+
+/*Parte do carrosel*/
+.slider {
+    margin:0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width:400% ;
+    height: 400px;
+    display: flex;
+}
+
+
+.slides input{
+    display: none;
+}
+
+.slides{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position:absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn :not(:last-child){
+
+}
+
+
+
+
 /* Home */
 #home {
     background-color: #E89CB8;
