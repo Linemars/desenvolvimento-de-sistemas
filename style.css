@@ -200,6 +200,7 @@ h1 {
     color: white;
 }
 
+
 p {
     font-size: 18px;
     line-height: 1.6;
@@ -229,10 +230,67 @@ button:hover {
 }
 
 
- 
+ul{
+    list-style-type: none;
 
+    display: flex;
 
+    position: relative;
+
+    gap: 40px;
+}
+
+ul li .icon{
+    width: 80px;
+    height: 80px;
+
+    background: #ffffffff;
+    box-shadow: 0 8px 25px #00000055;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+ul li :hover{
+    width: 180px;
+}
+ul li span{
+    position: absolute;
    
+}
+
+ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .5s;
+
+}
+
+ul li .text{
+    color:#ffffffff;
+    font-size: 18px;
+
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li:hover .icon{
+    transform: scale(0);
+
+}
+
+
+  
 
 
 
