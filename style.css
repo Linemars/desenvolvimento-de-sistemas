@@ -185,7 +185,78 @@ section {
     background-color: #6B1E3A;
     color: white;
     min-height: 50vh;
+    
+
 }
+
+ul{
+    list-style-type: none;
+    display:flex;
+
+    position: relative;
+}
+
+.img-icones ul li{
+    width: 80px;
+    height: 80px;
+
+    background-color: #e89cb8;
+    box-shadow: 0 6px 20px #00000055;
+
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+}
+ 
+.img-icones ul li:hover{
+    width: 180px;
+}
+.img-icones ul li span{
+    position: absolute;
+
+}
+.img-icones ul li .icon{
+    color: #ffff;
+    font-size: 2.2em;
+    transition: .2s;
+
+
+ }
+
+ .img-icones ul li .text{
+    color:#faf9f9;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+
+    transition-delay: .1s;
+
+ }
+ .img-icones ul li:hover .text{
+    transform: scale(1);
+ }
+ .img-icones ul li:hover .icon{
+    transform: scale(0);
+    
+  }
+  .img-icones ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1) ,var(--cor2));
+    inset:0;
+    opacity: 0;
+    border-radius: 60px;
+   }
+   .img-icones ul li:hover::before{
+    opacity: 1;
+   }
+
+    
+
 
 
 /* Títulos */
@@ -230,64 +301,6 @@ button:hover {
 }
 
 
-ul{
-    list-style-type: none;
-
-    display: flex;
-
-    position: relative;
-
-    gap: 40px;
-}
-
-ul li .icon{
-    width: 80px;
-    height: 80px;
-
-    background: #ffffffff;
-    box-shadow: 0 8px 25px #00000055;
-    border-radius: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-
-}
-
-ul li :hover{
-    width: 180px;
-}
-ul li span{
-    position: absolute;
-   
-}
-
-ul li .icon{
-    color: #ccc;
-    font-size: 2.2em;
-    transition: .5s;
-
-}
-
-ul li .text{
-    color:#ffffffff;
-    font-size: 18px;
-
-    transform: scale(0);
-    transition: .2s;
-    transition-delay: .1s;
-}
-
-ul li:hover .text{
-    transform: scale(1);
-}
-
-ul li:hover .icon{
-    transform: scale(0);
-
-}
 
 
   
