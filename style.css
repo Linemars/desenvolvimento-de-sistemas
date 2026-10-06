@@ -515,3 +515,40 @@ button:hover {
     }
 
 }
+
+
+/*---------------------------------- PARTE DO INDEX 3 / CARRINHO ----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    background-color: #E89CB8;
+    font-family: 'lato', sans-serif;
+}
+
+header{
+    
+    background-color: #2C0A1A;
+    font-size: 24px;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+ main{
+    background-color: #E89CB8;
+
+    .page-title{
+        background-color: #2C0A1A;
+        font-size: 40px;
+        padding: 50px 0;
+        text-align: center;
+    }
+    section{
+        background-color: #E89CB8;
+    }
+
+    aside{
+        background-color: #E89CB8;
+    }
+ }
