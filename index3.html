@@ -1,23 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
+    <link:carrinho.js class="js"></link:carrinho.js>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <span>Carrinho de Compras do <b> four petals</b></span>
-    </header>
-    <main>
-        <div class="page-title"> Seu Carrinho de Compras</div>
-        <div class="content"></div>
-        <section>
-            listagem de produtos
-        </section>
-        <aside>resumo do pedido</aside>
-    </main>
-        
+    <nav class="navbar">
+
+        <div class="nav-links">
+    
+            <a href="index.html">Home</a>
+    
+            <a href="#">Quem Somos Nós</a>
+    
+            <a href="#">Catálogo</a>
+    
+            <a href="#">Fale Conosco</a>
+    
+            <a href="#">Catálogo</a>
+  
+            <a href="#">Compras</a>
+    
+        </div>
+    
+    </nav>    
+    
+    <!-- BOTÃO DO CARRINHO -->
+<button id="cart-button" class="cart-button" aria-label="Abrir carrinho">
+    🛒
+    <span id="cart-count">0</span>
+</button>
+
+<!-- FUNDO ESCURO -->
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<!-- CARRINHO LATERAL -->
+<aside id="cart-sidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Seu carrinho</h2>
+
+        <button id="close-cart" class="close-cart">
+            &times;
+        </button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+       
+    </div>
+
+    <div class="cart-empty" id="cart-empty">
+        <div class="empty-icon">🛒</div>
+        <h3>Seu carrinho está vazio</h3>
+        <p>Adicione produtos para vê-los aqui.</p>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-subtotal">
+            <span>Subtotal:</span>
+            <strong id="cart-total">R$ 0,00</strong>
+        </div>
+
+        <button class="checkout-button" id="checkout-button">
+            Finalizar compra
+        </button>
+
+    </div>
+
+</aside>
 </body>
 </html>
