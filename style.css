@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -299,221 +299,340 @@ button {
 button:hover {
     background-color: #6B1E3A;
 }
+
 /*---------------------------------- PARTE DO INDEX2 / CATÁLOGO ----------------------------------------------*/
 
-.Img-catalogo {
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e89cb8;
+    color: #333;
+}
+
+
+/* cabeçalho */
+
+header {
     width: 100%;
-    min-height: 100vh;
+    background: #835050;
+    padding: 20px 6%;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-    padding: 120px 20px 60px;
+nav ul {
+    list-style: none;
+}
 
-    background-color: #E89CB8;
+nav ul li a {
+    display: inline-block;
+    color: #8b3a62;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 10px 22px;
+    border: 2px solid #8b3a62;
+    border-radius: 25px;
+
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #8b3a62;
+    color: #ffffff;
+}
+
+
+/* Catálogo */
+
+.Img-catalogo {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
 
     display: grid;
-
-    grid-template-columns: repeat(3, 300px);
-
-    justify-content: center;
-
-    align-items: start;
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-
-    margin: 0 auto;
 }
 
+
+/* Card*/
 
 .produto {
-    width: 300px;
-
-    background-color: #ffffff;
-
-    border: 1px solid #ddd;
-
-    border-radius: 22px;
-
+    background: #ffffff;
+    border-radius: 18px;
     overflow: hidden;
 
-    box-shadow: 0 5px 15px #00000025;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
-    transition: 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    position: relative;
 }
-
 
 .produto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 
-    box-shadow: 0 10px 25px #00000035;
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.14);
 }
 
+
+/* Imagem */
 
 .imagem-produto {
     width: 100%;
-    height: 190px;
+    height: 330px;
 
     position: relative;
+    overflow: hidden;
 
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: white;
+    background: #f5eeee;
 }
-
 
 .imagem-produto img {
-    width: 80%;
+    width: 100%;
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
 
-    margin: 0;
+    display: block;
 
-    max-width: 100%;
+    transition: transform 0.5s ease;
 }
+
+.produto:hover .imagem-produto img {
+    transform: scale(1.06);
+}
+
+
+/* Desconto */
 
 .desconto {
     position: absolute;
 
-    top: 10px;
-    left: 12px;
+    top: 15px;
+    left: 15px;
 
-    width: 40px;
-    height: 40px;
+    width: 58px;
+    height: 58px;
 
-    background-color: #6B1E3A;
-
-    color: white;
+    background: #a83d68;
+    color: #ffffff;
 
     border-radius: 50%;
 
     display: flex;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     text-align: center;
 
-    font-size: 13px;
-
-    font-weight: bold;
-
+    font-size: 12px;
     line-height: 1.2;
+    font-weight: 700;
 
-    z-index: 5;
+    z-index: 2;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
+
+
+/* Informações */
 
 .informacoes {
-    border-top: 4px solid #6B1E3A;
-
-    text-align: center;
-
-    padding: 20px 10px;
+    padding: 22px;
 }
-
 
 .informacoes h2 {
-    font-family: 'Poppins', sans-serif;
+    color: #4d2938;
 
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
 
-    font-weight: 400;
+    margin-bottom: 15px;
 
-    color: #111;
-
-    margin-bottom: 20px;
+    min-height: 30px;
 }
 
+
+/* Preço */
 
 .precos {
     display: flex;
+    flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
+    gap: 3px;
 
-    gap: 10px;
+    margin-bottom: 10px;
 }
 
-
 .preco-antigo {
-    font-size: 15px;
+    color: #999;
 
-    color: #222;
+    font-size: 14px;
 
     text-decoration: line-through;
 }
 
-
 .preco-atual {
-    font-family: 'Poppins', sans-serif;
+    color: #a83d68;
 
-    font-size: 23px;
-
-    font-weight: bold;
-
-    color: #2C0A1A;
+    font-size: 25px;
+    font-weight: 700;
 }
 
+
+/* =========================
+   PARCELAMENTO
+========================= */
 
 .informacoes p {
-    font-family: 'Poppins', sans-serif;
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.5;
 
     margin-top: 8px;
-
-    font-size: 14px;
-
-    color: #6B1E3A;
 }
-
 
 .informacoes strong {
-    font-family: 'Poppins', sans-serif;
-
-    font-weight: bold;
+    color: #555;
+    font-weight: 600;
 }
 
 
-@media (max-width: 1100px) {
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Notebook */
+
+@media (max-width: 1200px) {
 
     .Img-catalogo {
-        grid-template-columns: repeat(2, 330px);
+        grid-template-columns: repeat(3, 1fr);
+        width: 92%;
     }
 
+    .imagem-produto {
+        height: 300px;
+    }
 }
 
-@media (max-width: 700px) {
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 18px 5%;
+    }
 
     .Img-catalogo {
-        padding: 110px 20px 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
 
+        width: 90%;
+        margin-top: 35px;
+    }
+
+    .imagem-produto {
+        height: 320px;
+    }
+}
+
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .Img-catalogo {
         grid-template-columns: 1fr;
 
-        gap: 30px;
-    }
+        width: 90%;
 
+        gap: 25px;
+
+        margin: 30px auto;
+    }
 
     .produto {
-        width: 330px;
-
-        max-width: 100%;
-
-        justify-self: center;
+        border-radius: 15px;
     }
 
+    .imagem-produto {
+        height: 360px;
+    }
+
+    .informacoes {
+        padding: 20px;
+    }
+
+    .informacoes h2 {
+        font-size: 19px;
+    }
+
+    .preco-atual {
+        font-size: 23px;
+    }
+
+    .desconto {
+        width: 55px;
+        height: 55px;
+
+        top: 12px;
+        left: 12px;
+
+        font-size: 11px;
+    }
 }
+
+
+/* Celulares pequenos */
 
 @media (max-width: 400px) {
 
     .Img-catalogo {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 92%;
     }
 
-    .produto {
-        width: 100%;
+    .imagem-produto {
+        height: 300px;
     }
 
+    .informacoes {
+        padding: 17px;
+    }
+
+    .informacoes h2 {
+        font-size: 18px;
+    }
+
+    .preco-atual {
+        font-size: 21px;
+    }
 }
 
 
