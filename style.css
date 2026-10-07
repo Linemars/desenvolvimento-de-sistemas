@@ -763,7 +763,6 @@ nav ul li a:hover {
     height: 70px;
 
     padding: 0 22px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1062,15 +1061,12 @@ nav ul li a:hover {
     justify-content: center;
 
     gap: 40px;
-
     width: 100%;
 }
 
 .nav-links a {
     display: inline-block;
-
     color: #ffffff;
-
     text-decoration: none;
 
     font-family: Arial, sans-serif;
