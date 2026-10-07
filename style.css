@@ -321,9 +321,9 @@ body {
 
 header {
     width: 100%;
-    background: #835050;
+    background: #6B1E3A;
     padding: 20px 6%;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E89CB8;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -335,21 +335,21 @@ nav ul {
 
 nav ul li a {
     display: inline-block;
-    color: #8b3a62;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
 
     padding: 10px 22px;
-    border: 2px solid #8b3a62;
+    border: 2px solid #E89CB8;
     border-radius: 25px;
 
     transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #8b3a62;
-    color: #ffffff;
+    background: #E89CB8;
+    color: #6B1E3A;
 }
 
 
@@ -667,6 +667,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 
     transition: 0.2s;
+    
 }
 
 .cart-button:hover {
@@ -760,16 +761,16 @@ nav ul li a:hover {
 /* cabeçalho */
 
 .cart-header {
-    height: 70px;
+    height: 100px;
 
     padding: 0 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background: #131921;
+    background: #E89CB8;
 
-    color: white;
+    color: rgb(255, 249, 249);
 
     flex-shrink: 0;
 }
@@ -791,6 +792,7 @@ nav ul li a:hover {
     cursor: pointer;
 
     line-height: 1;
+    
 }
 
 
@@ -1042,17 +1044,19 @@ nav ul li a:hover {
     position: relative;
 
     width: 100%;
-    height: 62px;
+    height: 80px;
 
-    background-color: #300718;
+    background-color: #6B1E3A;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     z-index: 100;
 
     box-sizing: border-box;
+    
 }
 
 .nav-links {
@@ -1062,23 +1066,25 @@ nav ul li a:hover {
 
     gap: 40px;
     width: 100%;
+    
 }
 
 .nav-links a {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border: 2px solid #E89CB8;
+    border-radius: 25px;
+    transition: 0.10s ease; }
 
-    font-family: Arial, sans-serif;
-
-    font-size: 18px;
-
-    white-space: nowrap;
-}
-
-.nav-links a:hover {
-    color: #dddddd;
-}
+    .nav-links a:hover {
+        color: #724848;
+        background-color: #E89CB8;
+        transition: 0.10s;
+    }
 
 
 /* CARRINHO */
