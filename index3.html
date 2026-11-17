@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
-    <link:carrinho.js class="js"></link:carrinho.js>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+<div id="cart-sidebar" class="active" style="position:relative;
+    right:auto;
+    transform:none;
+    width: 90%;
+    max-width:600px;
+    margin: 100px auto 0 auto; 
+    transform:none;
+    background:white; 
+    padding:20px; 
+    border-radius:20px;"
+    display: block;>
+    <button id="close-cart">X</button>
+  <h3>Seu carrinho</h3>
+  <div id="cart-empty">Seu carrinho está vazio 🌸</div>
+  <div id="cart-items"></div>
+  <p id="cart-total">R$ 0,00</p>
+  <div style="margin-bottom: 15px;">
+    <label for="forma-pagamento">Forma de pagamento:</label>
+
+    <select id="forma-pagamento"
+        style="display:block; width:100%; padding:12px;
+        margin-top:10px; border-radius:8px;
+        background:white; color:black;">
+
+        <option value="">Selecione uma opção</option>
+        <option value="pix">Pix</option>
+        <option value="credito">Cartão de crédito</option>
+        <option value="debito">Cartão de débito</option>
+
+    </select>
+</div>
+  <button id="checkout-button">Pix ou cartão</button>
+  <div id="pagamento" style="display:none; padding:20px;">
+
+    <h3>Escolha a forma de pagamento</h3>
+
+    <select id="forma-pagamento" onchange="mostrarPagamento()">
+        <option value="">Selecione</option>
+        <option value="pix">Pix</option>
+        <option value="cartao">Cartão</option>
+    </select>
+
+    <div id="dados-cartao" style="display:none;">
+        <h3>Dados do cartão</h3>
+
+        <input type="text" placeholder="Nome no cartão">
+        <input type="text" placeholder="Número do cartão fictício">
+        <input type="text" placeholder="Validade (MM/AA)">
+        <input type="text" placeholder="CVV fictício">
+
+        <button type="button" onclick="finalizarSimulacao()">
+            Confirmar pagamento
+        </button>
+    </div>
+
+    <div id="dados-pix" style="display:none;">
+        <h3>Pagamento via Pix</h3>
+        <p>Simulação de pagamento por Pix.</p>
+
+        <button type="button" onclick="finalizarSimulacao()">
+            Simular pagamento
+        </button>
+    </div>
+
+</div>
+</div>
+
+
+
     <nav class="navbar">
 
         <div class="nav-links">
@@ -51,6 +120,22 @@
     </div>
 
     <div class="cart-footer">
+        <div style="margin-bottom: 15px;">
+    <label for="forma-pagamento">
+        <strong>Forma de pagamento:</strong>
+    </label>
+
+    <select id="forma-pagamento"
+        style="width: 100%; padding: 12px;
+        margin-top: 10px; border-radius: 8px;">
+
+        <option value="">Selecione uma opção</option>
+        <option value="pix">Pix</option>
+        <option value="cartao">Cartão de crédito</option>
+        <option value="debito">Cartão de débito</option>
+
+    </select>
+</div>
 
         <div class="cart-subtotal">
             <span>Subtotal:</span>
@@ -64,5 +149,25 @@
     </div>
 
 </aside>
+   <script src="carrinho.js"></script>
+</style>
+<script>
+    
+</script>
 </body>
-</html>
+
+<style>
+  #cart-items {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .cart-item, #cart-items > div {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    border-bottom: 1px solid #ddd !important;
+    padding-bottom: 15px !important;
+  }
+</style>
+  

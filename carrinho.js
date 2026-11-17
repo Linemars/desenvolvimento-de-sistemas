@@ -292,3 +292,5 @@ checkoutButton.addEventListener("click", () => {
 
 
 renderCart();
+
+

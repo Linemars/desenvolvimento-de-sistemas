@@ -20,6 +20,16 @@
 
 
     <body>
+                <button id="cart-button">🛒 <span id="cart-count">0</span></button>
+        <div id="cart-overlay"></div>
+        <div id="cart-sidebar">
+        <button id="close-cart">X</button>
+        <h3>Seu carrinho</h3>
+        <div id="cart-empty">Vazio</div>
+        <div id="cart-items"></div>
+        <p id="cart-total">R$ 0,00</p>
+        <button id="checkout-button">Finalizar</button>
+        </div>
 
         <header>
 
@@ -78,6 +88,13 @@
                     <p>
                         3 x de <strong>R$66,60</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                        data-id="1" 
+                        data-name="Campo Laranja" 
+                        data-price="199.90" 
+                        data-image="imagens/laranja.jpg">
+                        Adicionar no carrinho
+                        </button>
 
                 </div>
 
@@ -119,6 +136,13 @@
                     <p>
                         3 x de <strong>R$80,00</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="2" 
+                    data-name="Campo Branco" 
+                    data-price="240.00" 
+                    data-image="imagens/600_846-e21365c49f33f7554517696382559861-1024-1024.jpeg">
+                        Adicionar no carrinho
+                        </button>
 
                 </div>
 
@@ -160,6 +184,13 @@
                     <p>
                         3 x de <strong>R$56,63</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="3" 
+                    data-name="kokedama" 
+                    data-price="199.90" 
+                    data-image="imagens/chatgpt-image-14-de-jul-de-2026-11_43_05-f61bd99f95ff4480b817840401695885-1024-1024.webp  ">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -199,6 +230,13 @@
                     <p>
                         3 x de <strong>R$79,97</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="4" 
+                    data-name="Satori" 
+                    data-price="299.90" 
+                    data-image="imagens/bombom.jpeg">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -239,6 +277,13 @@
                     <p>
                         3 x de <strong>R$66,63</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="5" 
+                    data-name="Nevé Rosé" 
+                    data-price="199.90" 
+                    data-image="imagens/teste rosa.jpg">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -280,6 +325,13 @@
                     <p>
                         3 x de <strong>R$113,30</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="6" 
+                    data-name="Encanto de Mulher" 
+                    data-price="339.90" 
+                    data-image="imagens/vaso de rosa.jpeg">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -295,7 +347,7 @@
 
                     <img
                         src="imagens/600_805-fdb519b14a8b7653af17703917540478-1024-1024.jpg"
-                        alt="Amor Lilás"
+                        alt="Buquê fidelidade"
                     >
 
                 </div>
@@ -321,6 +373,13 @@
                     <p>
                         3 x de <strong>R$66,63</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="7" 
+                    data-name="Buquê Fidelidade" 
+                    data-price="199.90" 
+                    data-image="imagens/600_805-fdb519b14a8b7653af17703917540478-1024-1024.jpg">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -360,6 +419,13 @@
                     <p>
                         3 x de <strong>R$63,30</strong> sem juros
                     </p>
+                    <button class="add-to-cart" 
+                    data-id="8" 
+                    data-name="Sol da Tarde" 
+                    data-price="189.90" 
+                    data-image="imagens/sol da tarde.jpg">
+                    Adicionar no carrinho
+                    </button>
 
                 </div>
 
@@ -404,7 +470,13 @@
                     <p>
                         3 x de <strong>R$66,64</strong> sem juros
                     </p>
-                    
+                    <button class="add-to-cart" 
+                    data-id="9" 
+                    data-name="Brisa do Campo" 
+                    data-price="199.92" 
+                    data-image="imagens/brisa do campo.jpg">
+                    Adicionar no carrinho
+                    </button>
             
                 </div>
             
@@ -442,6 +514,13 @@
             <p>
                 3 x de <strong>R$73,60</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="10" 
+                    data-name="Flow Box Rosas" 
+                    data-price="219.90" 
+                    data-image="imagens/imagens/gemini_generated_image_pfdxnvpfdxnvpfdx-3e4dc06ebdcac67fb517694834859242-1024-1024-cb1ddf1b149ada174c17809187383200-1024-1024.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -478,6 +557,13 @@
             <p>
                 3 x de <strong>153,30</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="11" 
+                    data-name="Rose Prestige" 
+                    data-price="459.90" 
+                    data-image="imagens/whatsapp-image-2026-05-22-at-16-56-57-5133971c04703e746817794803799628-1024-1024.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -514,6 +600,13 @@
             <p>
                 3 x de <strong>R$76,63 </strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="12" 
+                    data-name="Amor Lilas" 
+                    data-price="229.90" 
+                    data-image="imagens/amor lilas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -551,6 +644,13 @@
             <p>
                 3 x de <strong>R$66,63 </strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="13" 
+                    data-name="Buquê Pureza" 
+                    data-price="219.90" 
+                    data-image="imagens/branco.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -588,6 +688,13 @@
             <p>
                 3 x de <strong>R$79,92</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="14" 
+                    data-name="Serenata" 
+                    data-price="299.99" 
+                    data-image="imagens/teste serenata.jpeg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -625,6 +732,13 @@
             <p>
                 3 x de <strong>R$43,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="15" 
+                    data-name="Cores do Campo" 
+                    data-price="139.90" 
+                    data-image="imagens/Cores do Campo.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -661,6 +775,13 @@
             <p>
                 3 x de <strong>R$89,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="16" 
+                    data-name="Flora" 
+                    data-price="269.90" 
+                    data-image="imagens/flora.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -697,6 +818,13 @@
             <p>
                 3 x de <strong>R$63,60</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="17" 
+                    data-name="Jardim Rosado" 
+                    data-price="199.99" 
+                    data-image="imagens/colorida.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -733,6 +861,13 @@
             <p>
                 3 x de <strong>R$65,70</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="18" 
+                    data-name="Buquê Charme do Campo" 
+                    data-price="189.90" 
+                    data-image="imagens/Charme .jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -768,6 +903,13 @@
             <p>
                 3 x de <strong>R$59,90</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="19" 
+                    data-name="buquê Alegria do Campo" 
+                    data-price="269.90" 
+                    data-image="imagens/urso.webp">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -803,6 +945,13 @@
             <p>
                 3 x de <strong>R$58,90</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="20" 
+                    data-name="Minha Paixão" 
+                    data-price="239.90" 
+                    data-image="imagens/dalia.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -841,6 +990,13 @@
             <p>
                 3 x de <strong>R$66,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="21" 
+                    data-name="Buquê Pink Essence" 
+                    data-price="199.90" 
+                    data-image="imagens/buque pink.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -881,6 +1037,13 @@
             <p>
                 3 x de <strong>R$93,30</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="22" 
+                    data-name="buquê duo  Love" 
+                    data-price="279.90" 
+                    data-image="imagens/duo love.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -918,6 +1081,13 @@
             <p>
                 3 x de <strong>R$56,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="23" 
+                    data-name="Buquê 14 Rosas" 
+                    data-price="169.90" 
+                    data-image="imagens/buque 14 rosas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -956,6 +1126,13 @@
             <p>
                 3 x de <strong>R$89,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="24" 
+                    data-name="Suspiro de rosas" 
+                    data-price="269.90" 
+                    data-image="imagens/Suspiro de rosas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -994,6 +1171,13 @@
             <p>
                 3 x de <strong>R$43,30</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="25" 
+                    data-name="Buquê Gerberas Mistas" 
+                    data-price="129.90" 
+                    data-image="imagens/Buquê Gerberas Mistas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1032,6 +1216,13 @@
             <p>
                 3 x de <strong>R$129,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="26" 
+                    data-name="Buquê 50 Rosas" 
+                    data-price="389.90" 
+                    data-image="imagens/50 rosas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1070,6 +1261,13 @@
             <p>
                 3 x de <strong>R$79,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="27" 
+                    data-name="Buquê 24 Rosas Duas Cores" 
+                    data-price="239.90" 
+                    data-image="imagens/Buquê 24 Rosas Duas Cores.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1108,6 +1306,13 @@
             <p>
                 3 x de <strong>R$96,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="28" 
+                    data-name="Buquê 30 Rosas Black Edition" 
+                    data-price="289.90" 
+                    data-image="imagens/Buquê 30 Rosas Black Edition.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1146,6 +1351,13 @@
             <p>
                 3 x de <strong>R$66,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="29" 
+                    data-name="Jardim Rosado no Vaso" 
+                    data-price="199.90" 
+                    data-image="imagens/Jardim Rosado no Vaso.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1184,6 +1396,13 @@
             <p>
                 3 x de <strong>R$39,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="30" 
+                    data-name="Margaridinhas" 
+                    data-price="119.90" 
+                    data-image="imagens/Margaridinhas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1222,6 +1441,13 @@
             <p>
                 3 x de <strong>R$59,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="31" 
+                    data-name="Summer" 
+                    data-price="179.90" 
+                    data-image="imagens/Summer.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1260,6 +1486,13 @@
             <p>
                 3 x de <strong>R$53,30</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="32" 
+                    data-name="Azul Ouro" 
+                    data-price="159.90" 
+                    data-image="imagens/Azul Ouro.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1298,6 +1531,13 @@
             <p>
                 3 x de <strong>R$49,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="33" 
+                    data-name="Margaridinhas" 
+                    data-price="119.90" 
+                    data-image="imagens/Margaridinhas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1336,6 +1576,13 @@
             <p>
                 3 x de <strong>R$53,30</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="34" 
+                    data-name="Lirios Rosé" 
+                    data-price="299.90" 
+                    data-image="imagens/lirios Rosé.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1373,6 +1620,13 @@
             <p>
                 3 x de <strong>R$59,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="35" 
+                    data-name="Lirios em vaso" 
+                    data-price="179.90" 
+                    data-image="imagens/Lirios em vaso.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1411,6 +1665,13 @@
             <p>
                 3 x de <strong>R$49,97</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="36" 
+                    data-name="Primavera Branca" 
+                    data-price="149.90" 
+                    data-image="imagens/Primavera Branca.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1448,7 +1709,14 @@
 
             <p>
                 3 x de <strong>R$63,30</strong> sem juros
-            </p>
+            </p> 
+            <button class="add-to-cart" 
+                    data-id="37" 
+                    data-name="Encanto dos lírios" 
+                    data-price="189.90" 
+                    data-image="imagens/Encanto dos lírios.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1489,6 +1757,13 @@
             <p>
                 3 x de <strong>R$76,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="38" 
+                    data-name="Buque de Rosas Colombianas" 
+                    data-price="229.90" 
+                    data-image="imagens/Buque de Rosas Colombianas.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1527,6 +1802,13 @@
             <p>
                 3 x de <strong>R$66,63</strong> sem juros
             </p>
+            <button class="add-to-cart" 
+                    data-id="39" 
+                    data-name="Buquê Origem" 
+                    data-price="199.90" 
+                    data-image="imagens/Buquê Origem.jpg">
+                    Adicionar no carrinho
+                    </button>
 
         </div>
 
@@ -1538,6 +1820,7 @@
 
 
         </div>
+        <script src="carrinho.js"></script>
 
 
     </body>
